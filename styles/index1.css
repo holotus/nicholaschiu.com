@@ -1,0 +1,281 @@
+
+
+/* --------------------------------- General Setup --------------------------------- */
+
+
+
+body
+{
+	font-family: 'GlyphaRoman';
+	width: 100%;   
+	
+	text-align: center;  /*For IE6 Shenanigans*/  
+}
+
+
+a
+{    
+    text-decoration:none;
+	color: #000000;
+}
+
+
+
+#feature
+{
+	position: relative;
+	top: 27px;
+	left: 0px;
+	max-width: 100%;
+	
+}
+
+/*---set centre in broswer ---*/
+*{
+	margin: 0;
+	padding: 0;
+}
+#wrapper
+{
+/*	width: 892px;  before*/
+	width: 870px;
+	margin: 0 auto;
+	
+	text-align: left;
+	padding-top: 15px;
+	
+	background-color: white;
+	
+}
+
+
+/* --------------------------------- General Setup --------------------------------- */
+
+
+/* ------------------------- Header Nav Menu -------------------------  */
+
+
+#NickChiu
+{
+	background-image: url(../images/nc.png);
+	background-repeat: no-repeat;
+	background-size: 94%;
+	width: 137px;
+	height: 102px;
+	position: relative;
+	text-indent: -3000px;	
+	float: left;
+	max-width: 100%;
+}
+
+#title
+{
+	background-image: url(../images/title-new.png);
+	background-repeat: no-repeat;
+	width: 690px;
+	height: 93px;  
+/*	background-size: 200%; */
+	
+	position: relative;
+	text-indent: -3000px;
+	max-width: 100%;
+	float: right;
+	top: 2px;
+	left: 0px;
+
+	padding-bottom:	10px;
+}
+
+
+   	
+
+
+.navigation  {
+		margin:0; 
+		padding:0; 
+		list-style:none;
+		clear: both;
+		font-family: 'FrutigerBold';
+		
+	}	
+	
+	/* Little tricking with positions */
+	.navigation  li {
+		float:left;			/* Show list items inline */
+		position:relative; 
+		font-size: 13px;
+/*		letter-spacing: .1em; */
+		
+	
+	}
+		
+	/* Playing with Main Categories */
+	.navigation  li a {
+		background:#fff; 
+		color:#000;
+		display:block;  	/* Making sure a element covers whole li area */
+		padding:8px 10px 8px 10px; 
+		text-decoration:none; /* No underline */
+/*???		border-top:1px solid #19AAE1; */
+		text-align: left; 
+		text-transform:uppercase;
+		margin-top: 0px;
+		
+		z-index: 4000;
+		
+	}
+
+	
+
+	.navigation  li a:hover {
+		color:#fff;
+		background: #19AAE1 ;
+	}
+		
+	/* Sub Cat Menu stuff*/
+	.navigation  ul {
+		position: absolute;
+		left:0px; 
+		display:none; /* Hide it by default */
+		margin:0 0 0 0px; 
+		padding:0; 
+		list-style:none;
+		font-size:11px;
+		
+						z-index: 4000;
+		
+	}
+		
+	.navigation  ul li {
+		width: 100%;
+		float:left; 
+		border-top:none;
+	}
+		
+	/* Sub Cat menu link properties */
+	.navigation  ul a {
+		display:block;    	/* Making sure a element covers whole li area */
+		height:100%;
+		padding:8px 10px 8px 10px; 
+		color:#000;
+		text-decoration:none;	
+		border-top:none;
+		font-size: 11px;
+		line-height: 12px;
+		
+		font-family: 'FrutigerBold';
+		letter-spacing: 0pt;
+		box-shadow: 0px 1px 3px #999999;
+		
+	}
+		
+	.navigation  ul a:hover {
+		color:#fff;
+		background: #19AAE1 ;
+		
+	}
+/* ------------------------- Header Nav Menu -------------------------  */
+
+/* ------------------------ BODY ------------------------------ */
+.LineSpacer
+{
+	margin-top: 8px;	
+	border-top:1px solid #19AAE1; 
+	
+}
+
+.WorkTitle
+{
+	font-family: 'GlyphaLight';
+	font-size: 180%;
+	color: black;
+	padding-bottom: 10px;
+	width: 700px;
+	float: left;
+	margin-left: 2px;
+	clear:  both;
+	
+	
+}
+
+.WorkDescr
+{
+	font-family: 'GlyphaBold';
+	font-size: 100%;
+/*	letter-spacing: .5pt; */
+	line-height: 16px;
+	color: black;
+	padding-bottom: 10px;
+	width: 145px;
+	margin-left:20px;
+	margin-top: 0px;
+	float: left;
+
+}
+.WorkDisplay
+{
+	float: left;
+	clear: both;
+	z-index: -2;
+}
+
+#WorkDisplayWeb
+{
+	margin-top: -472px;
+	margin-left: 50px;	
+	z-index: 0;
+	float: left;
+}
+.WorkDescr2
+{
+	font-family: 'GlyphaBold';
+	font-size: 100%;
+/*	letter-spacing: .5pt; */
+	line-height: 16px;
+	color: black;
+	padding-bottom: 10px;
+	width: 145px;
+	margin-left:718px;
+	margin-top: -497px;
+	float: left;
+
+}
+
+#webFrame
+{
+	background-image: url(../images/broswer.png);
+	background-repeat: no-repeat;
+	width: 697px;
+	height: 496px;  
+	z-index: -8000;
+	float: left;
+	margin-top: 2px;
+	margin-left: 2px;
+}
+
+.spacer {
+	padding-bottom: 20px;
+	width: 100%;
+}
+
+.BackToTop 
+{
+	font-family: 'GlyphaLight';
+	font-size: 15px;
+	color: black;
+	padding-bottom: 50px;
+	width: 892px;
+	text-align:center;
+	clear: both;
+	
+}
+
+.InteractiveLink
+{
+	font-family: 'GlyphaRoman';
+	font-size: 24px;	
+	
+}
+
+
+
