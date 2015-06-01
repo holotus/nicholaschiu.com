@@ -260,10 +260,7 @@ section.divider {
 
 }
 
-}
 
-
-}
 /* branding */
 section.logo {
     color: #fff;
@@ -341,7 +338,7 @@ section.logo {
 
 .btn-outline {
     margin-top: 15px;
-    border: solid 2px #fff;
+    border: solid 2px #00b096;
     font-size: 20px;
     color: #fff;
     background: 0 0;
@@ -491,6 +488,8 @@ footer .footer-below {
 
 .portfolio-modal .modal-content img {
     margin-bottom: 30px;
+	padding-bottom: 20px;
+
 }
 
 .portfolio-modal .modal-content .item-details {
@@ -535,4 +534,9 @@ footer .footer-below {
 .portfolio-modal .modal-backdrop {
     display: none;
     opacity: 0;
+}
+
+
+.spacer {
+padding: 1em;	
 }
