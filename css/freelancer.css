@@ -63,7 +63,7 @@ hr.star-primary {
 header {
     text-align: center;
     color: #fff;
-    background: #262626;
+    background: #ebebeb;
 }
 
 header .container {
@@ -177,7 +177,7 @@ section.success a:focus,
 section.success a:active,
 section.success a.active {
     outline: 0;
-    color: #2c3e50;
+    color: #0f515f;
 }
 
 @media(max-width:767px) {
@@ -215,7 +215,7 @@ section.work {
     width: 100%;
     height: 100%;
     opacity: 0;
-    background: rgba(24,188,156,.9);
+    background: #00b096;
     -webkit-transition: all ease .5s;
     -moz-transition: all ease .5s;
     transition: all ease .5s;
@@ -287,7 +287,7 @@ section.logo {
     width: 100%;
     height: 100%;
     opacity: 0;
-    background: rgba(24,188,156,.9);
+    background: #00b096;
     -webkit-transition: all ease .5s;
     -moz-transition: all ease .5s;
     transition: all ease .5s;
@@ -350,7 +350,7 @@ section.logo {
 .btn-outline:active,
 .btn-outline.active {
     border: solid 2px #fff;
-    color: #18bc9c;
+    color: #00b096;
     background: #fff;
 }
 
@@ -403,7 +403,7 @@ section.logo {
 }
 
 .floating-label-form-group-with-focus label {
-    color: #18bc9c;
+    color: #00b096;
 }
 
 form .row:first-child .floating-label-form-group {
