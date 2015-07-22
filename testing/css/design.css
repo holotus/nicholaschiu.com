@@ -267,7 +267,7 @@ fieldset[disabled] .btn-xl.active {
     .navbar-default {
         padding: 25px 0;
         border: 0;
-        background-color: #0F505F;
+        background-color: #2e2e2e;
         -webkit-transition: padding .3s;
         -moz-transition: padding .3s;
         transition: padding .3s;
@@ -295,7 +295,7 @@ fieldset[disabled] .btn-xl.active {
 
     .navbar-default.navbar-shrink {
         padding: 10px 0;
-        background-color: rgb(15, 80, 95);
+        background-color: #2e2e2e;
         
     }
 
@@ -307,6 +307,8 @@ fieldset[disabled] .btn-xl.active {
 
 
 /*HEADER*/
+
+
 header {
     text-align: center;
     color: #fff;
@@ -317,11 +319,37 @@ header {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 100px
 }
 
 header .intro-text {
-    padding-top: 100px;
-    padding-bottom: 50px;
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+
+
+header .intro-text .intro-heading {
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 50px;
+    letter-spacing: 0.05em;
+    text-shadow: rgb(35, 35, 35) 1px 1px,
+    rgb(35, 35, 35) 2px 2px,
+    rgb(35, 35, 35) 3px 3px,
+    rgb(35, 35, 35) 4px 4px,
+    rgb(36, 36, 36) 5px 5px,
+    rgb(37, 37, 37) 6px 6px,
+    rgb(39, 39, 39) 7px 7px,
+    rgb(40, 40, 40) 8px 8px,
+    rgb(41, 41, 41) 9px 9px,
+    rgb(43, 43, 43) 10px 10px,
+    rgb(44, 44, 44) 11px 11px,
+    rgb(46, 46, 46) 12px 12px;
+    text-align: center;
 }
 
 header .intro-text .intro-lead-in {
@@ -331,71 +359,31 @@ header .intro-text .intro-lead-in {
     font-size: 18px;
     line-height: 22px;
     letter-spacing: 0.1em;
-    padding-bottom: 50px;
-
-}
-header .intro-text .intro-heading {
-    margin-bottom: 25px;
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
-    font-size: 54px;
-    line-height: 50px;
-    letter-spacing: 0.05em;
-    text-shadow: rgb(12, 64, 76) 1px 1px,
-    rgb(12, 64, 76) 2px 2px,
-    rgb(12, 64, 76) 3px 3px,
-    rgb(12, 64, 76) 4px 4px,
-    rgb(12, 64, 76) 5px 5px,
-    rgb(12, 64, 76) 6px 6px,
-    rgb(12, 65, 77) 7px 7px,
-    rgb(12, 66, 79) 8px 8px,
-    rgb(12, 68, 80) 9px 9px,
-    rgb(13, 69, 82) 10px 10px,
-    rgb(13, 70, 83) 11px 11px,
-    rgb(13, 72, 85) 12px 12px,
-    rgb(13, 73, 87) 13px 13px,
-    rgb(14, 74, 88) 14px 14px,
-    rgb(14, 76, 90) 15px 15px,
-    rgb(14, 77, 91) 16px 16px,
-    rgb(14, 78, 93) 17px 17px,
-    rgb(15, 80, 95) 18px 18px;
-    text-align: center;
-
+    padding-bottom: 30px;
 }
 
-<!-- bigger screen -->
+/* BIGGER SCREEN */
 @media (min-width:768px) {
     header .intro-text {
-        padding-top: 500px;
+        padding-top: 200px;
         padding-bottom: 200px;
     }
-
+    
     header .intro-text .intro-heading {
-        margin-bottom: 50px;
+        margin-bottom: 45px;
         text-transform: uppercase;
         font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-        font-size: 175px;
+        font-size: 70px;
         font-weight: 700;
-        line-height: 75px;
+        line-height: 85px;
     }
+    
     header .intro-text .intro-lead-in {
-        margin-bottom: 50px;
+        margin-bottom: 20px;
         font-family: Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
-        font-size: 55px;
-        font-style:italic;
+        font-size: 24px;
+        font-style: normal;
         line-height: 40px;
-        text-transform: uppercase;
-
-    }
-
-    header .intro-text .intro-heading {
-        margin-bottom: 50px;
-        text-transform: uppercase;
-        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-        font-size: 175px;
-        font-weight: 700;
-        line-height: 75px;
     }
 }
 
@@ -406,19 +394,43 @@ header .intro-text .intro-heading {
     padding-top: 100px;
 }
 
+/* ABOUT SECTION */
+section .about-heading {
+    text-align: center;
+    font-family:"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight:300;
+    font-size: 24px;
+    line-height: 35px;
+    letter-spacing: 0.05em;
+    padding-left: 20px;
+    padding-right:20px;
+}
+
+/* BIGGER SCREEN */
+@media (min-width:768px) {
+    section .about-heading {
+        font-size: 30px;
+        line-height: 45px;
+    }
+}
+
+
 section {
     padding: 0px 0;
 }
 
+/* Section Subheading */
 section h2.section-heading {
     margin-top: 50px;
-    margin-bottom: 1px;
-    font-size: 40px;
+    margin-bottom: 0px;
+    font-size: 30px;
     letter-spacing: 0.1em;
+    color: #fff;
+
 }
 
 section h3.section-subheading {
-    margin-bottom: 75px;
+    margin-bottom: 50px;
     text-transform: none;
     font-family: Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 100;
@@ -427,52 +439,27 @@ section h3.section-subheading {
     letter-spacing: 0.15em;
 }
 
-section .about-heading {
-    text-align: center;
-    font-family:"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 30px;
-    font-weight:300;
-    line-height: 45px;
-    letter-spacing: 0.05em;
-    padding-left: 20px;
-    padding-right:20px;
-}
+@media (min-width:768px) {
+    section h2.section-heading {
+    margin-top: 50px;
+    margin-bottom: 1px;
+    font-size: 40px;
+    letter-spacing: 0.1em;
         
-
-section .intro-lead-in {
-    text-align: center; 
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 20px;
-    font-style:normal;
-    line-height: 40px;
-    font-weight: 200;
-    letter-spacing: 0.05em;
-    padding-top: 10px;
-    padding-left: 20px;
-    padding-right:20px;
-    
-    
-}
-
-/*BIGGER SCREEN*/
-@media(min-width:768px) {
-    
-    header {
-        padding:150px 0;
     }
+    
     section {
-        padding: 50px 0;
+        padding-top: 50px;
     }
-    
 }
-    
-#services {
+
+
+section {
+    padding-top:  50px;
     padding-bottom: 50px;
 }
 
-.section-heading {
-        color: #fff;
-}
+
 .service-heading {
     margin: 15px 0;
     text-transform: uppercase;
@@ -568,8 +555,6 @@ section .intro-lead-in {
 @media(min-width:767px) {
     #portfolio .portfolio-item {
         margin: 0 0 30px;
-
-        
     }
 }
 
@@ -580,13 +565,15 @@ aside.clients img {
 
 
 /*CONTACT*/
+/*BIGGER SCREEN*/
 
 section#contact {
     background-color: #222;
     background-image: url(../img/map-image.png);
     background-position: center;
     background-repeat: no-repeat; 
-    padding-bottom: 50px;
+    padding-bottom: 100px;
+    padding-top: 0px;
 }
 
 section#contact .section-heading {
@@ -647,7 +634,6 @@ section#contact:-ms-input-placeholder {
 section#contact .text-danger {
     color: #e74c3c;
     font-size: 14px;
-
 }
 
 
@@ -657,7 +643,6 @@ footer {
     padding: 25px 0;
     text-align: center;
     background-color: black;
-
 }
 
 footer span.copyright {
@@ -667,7 +652,6 @@ footer span.copyright {
     font-weight: 400;
     line-height: 40px;
     color: #666;
-    
 }
 
 footer ul.quicklinks {
@@ -676,8 +660,11 @@ footer ul.quicklinks {
     font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
     line-height: 40px;
-    
+            padding-top: 0px;
+
 }
+
+
 
 
 /*SOCIAL ICONS*/
@@ -756,6 +743,7 @@ ul.social-buttons li a:active {
 
 .portfolio-modal .modal-content img {
     margin-bottom: 30px;
+    width: 1500;
 }
 
 .portfolio-modal .close-modal {
@@ -819,23 +807,14 @@ img::-moz-selection {
 }
 
 body {
-    webkit-tap-highlight-color: #FFC107;
+    -webkit-tap-highlight-color: #FFC107;
 }
-
-
-
-
-
-
-
 
 /* background color */
 .bg-light-gray { background-color: #f7f7f7; }
 .bg-darkest-gray { background-color: #333; }
 .bg-darkest-black { background-color: #000000; }
-.bg-dark-green { background-color: #0F505F; }
-
-
+.bg-dark-green { background-color: #2e2e2e; }
 
 .greengradient {
     background: #00b096; /* Old browsers */
@@ -847,7 +826,6 @@ body {
     background: radial-gradient(ellipse at center,  #00b096 0%,#016b5b 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b096', endColorstr='#016b5b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
-
 
 .bkgdimage1 {
     background-image: url(../img/header-bg7.jpg);
