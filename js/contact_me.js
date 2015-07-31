@@ -6,10 +6,7 @@ $(function() {
             // additional error messages or events
         },
         submitSuccess: function($form, event) {
-            // Prevent spam click and default submit behaviour
-            $("#btnSubmit").attr("disabled", true);
-            event.preventDefault();
-            
+            event.preventDefault(); // prevent default submit behaviour
             // get values from FORM
             var name = $("input#name").val();
             var email = $("input#email").val();
@@ -20,19 +17,98 @@ $(function() {
             if (firstName.indexOf(' ') >= 0) {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
+            // SEE: https://mandrillapp.com/api/docs/messages.JSON.html
             $.ajax({
-                url: "././mail/contact_me.php",
+                url: "https://mandrillapp.com/api/1.0/messages/send.json",
                 type: "POST",
                 data: {
-                    name: name,
-                    phone: phone,
-                    email: email,
-                    message: message
+                    "key": "2KYOzDMGZDeryVG1SJ8vRg",
+                    "message": {
+                        // "html": "<p>Example HTML content</p>",
+                        "text": message,
+                        "subject": name,
+                        "from_email": email,
+                        "from_name": name,
+                        "to": [
+                            {
+                                "email": "nicchiu@gmail.com",
+                                "name": "Nic Chiu",
+                                "type": "to"
+                            }
+                        ]//,
+                        // "headers": {
+                        //     "Reply-To": email
+                        // },
+                        // "important": false,
+                        // "track_opens": null,
+                        // "track_clicks": null,
+                        // "auto_text": null,
+                        // "auto_html": null,
+                        // "inline_css": null,
+                        // "url_strip_qs": null,
+                        // "preserve_recipients": null,
+                        // "view_content_link": null,
+                        // "bcc_address": "message.bcc_address@example.com",
+                        // "tracking_domain": null,
+                        // "signing_domain": null,
+                        // "return_path_domain": null,
+                        // "merge": true,
+                        // "merge_language": "mailchimp",
+                        // "global_merge_vars": [
+                        //     {
+                        //         "name": "merge1",
+                        //         "content": "merge1 content"
+                        //     }
+                        // ],
+                        // "merge_vars": [
+                        //     {
+                        //         "rcpt": "recipient.email@example.com",
+                        //         "vars": [
+                        //             {
+                        //                 "name": "merge2",
+                        //                 "content": "merge2 content"
+                        //             }
+                        //         ]
+                        //     }
+                        // ],
+                        // "tags": [
+                        //     "password-resets"
+                        // ],
+                        // "subaccount": "customer-123",
+                        // "google_analytics_domains": [
+                        //     "example.com"
+                        // ],
+                        // "google_analytics_campaign": "message.from_email@example.com",
+                        // "metadata": {
+                        //     "website": "www.example.com"
+                        // },
+                        // "recipient_metadata": [
+                        //     {
+                        //         "rcpt": "recipient.email@example.com",
+                        //         "values": {
+                        //             "user_id": 123456
+                        //         }
+                        //     }
+                        // ],
+                        // "attachments": [
+                        //     {
+                        //         "type": "text/plain",
+                        //         "name": "myfile.txt",
+                        //         "content": "ZXhhbXBsZSBmaWxl"
+                        //     }
+                        // ],
+                        // "images": [
+                        //     {
+                        //         "type": "image/png",
+                        //         "name": "IMAGECID",
+                        //         "content": "ZXhhbXBsZSBmaWxl"
+                        //     }
+                        // ]
+                    }
                 },
                 cache: false,
                 success: function() {
-                    // Enable button & show success message
-                    $("#btnSubmit").attr("disabled", false);
+                    // Success message
                     $('#success').html("<div class='alert alert-success'>");
                     $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                         .append("</button>");
@@ -67,7 +143,8 @@ $(function() {
     });
 });
 
-// When clicking on Full hide fail/success boxes
+
+/*When clicking on Full hide fail/success boxes */
 $('#name').focus(function() {
     $('#success').html('');
 });

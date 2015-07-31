@@ -1,11 +1,11 @@
 $(function() {
   $("#pieChart2").drawPieChart([{
     title: "Crafting - Design, Typeset & Photography",
-    value: 65,
+    value: 55,
     color: "#00b096"
   }, {
     title: "Conceptualizing",
-    value: 10,
+    value: 30,
     color: "#ffbe00"
   }, {
     title: "Doodling",
