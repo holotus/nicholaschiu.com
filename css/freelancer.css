@@ -610,11 +610,17 @@ body {
 	
 }
 
-dlbtn {
-	position: relative;
-	float: left;
-	
-    margin: 0 auto 20px;
-  
-	
+#dlbtn {
+	padding-top: 80px;
+    text-align: center;
+  	
+}
+
+
+@media(min-width:767px) {
+    #dlbtn {
+        	padding-top: 120px;
+
+        text-align: center;
+    }
 }
