@@ -22,7 +22,7 @@ $(function() {
                 url: "https://mandrillapp.com/api/1.0/messages/send.json",
                 type: "POST",
                 data: {
-                    "key": "2KYOzDMGZDeryVG1SJ8vRg",
+                    "key": "gapuPWYuZAaq2zo1zv_fxw",
                     "message": {
                         // "html": "<p>Example HTML content</p>",
                         "text": message,
@@ -31,7 +31,7 @@ $(function() {
                         "from_name": name,
                         "to": [
                             {
-                                "email": "nicchiu@gmail.com",
+                                "email": "nicchiudesign@gmail.com",
                                 "name": "Nic Chiu",
                                 "type": "to"
                             }
